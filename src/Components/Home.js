@@ -15,9 +15,9 @@ const Home = () => {
                 fakeData.filter((data)=>{
                     if (data === "") {
                         return data;
-                    } else if (data.first_name.toLocaleLowerCase().includes(data.first_name.toLocaleLowerCase())) {
+                    } else if (data.first_name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
                         return data;
-                    } else return data;
+                    } 
                 }).map(data => <p>{data.first_name}</p>)
             }
         </div>
